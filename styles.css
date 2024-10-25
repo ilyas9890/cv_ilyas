@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #2e5c41;  /* لون خلفية العنوان */
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-title {
+    color: white;  /* لون النص */
+    font-size: 36px;  /* حجم كبير للنص */
+    margin: 0;
+}
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    margin-bottom: 20px;
+    margin-top: 20px;  /* إضافة مسافة بين العنوان وبداية المحتوى */
+}
+
+.left-column {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.right-column {
+    width: 70%;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    color: #2e5c41;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #2e5c41;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2e5c41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e4b31;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+}

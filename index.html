@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">CV by Ilyas</h1>
+    </header>
+
+    <div class="resume-container">
+        <div class="left-column">
+            <img id="profilePhotoPreview" src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <p id="phone">+123-456-7890</p>
+                <p id="website">www.yourwebsite.com</p>
+                <p id="address">123 Your Street, Your City</p>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul id="skills-list">
+                    <li>Time Management</li>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                </ul>
+            </div>
+            <div class="languages">
+                <h3>Languages</h3>
+                <p id="language-1">English</p>
+                <p id="language-2">Korean</p>
+                <p id="language-3">Indonesian</p>
+            </div>
+        </div>
+        <div class="right-column">
+            <h1 id="name">Your Name</h1>
+            <h2 id="title">Your Job Title</h2>
+            <div class="about">
+                <h3>About Me</h3>
+                <p id="about">A brief description about yourself.</p>
+            </div>
+            <div class="education">
+                <h3>Education</h3>
+                <p id="education-1">University Name 2016-2018</p>
+                <p id="education-2">University Name 2014-2016</p>
+            </div>
+            <div class="experience">
+                <h3>Experience</h3>
+                <p id="experience-1">Company Name 2020-2022</p>
+                <p id="experience-2">Company Name 2018-2020</p>
+            </div>
+        </div>
+    </div>
+
+    <form id="cvForm">
+        <input type="text" id="inputName" placeholder="Your Name" required><br>
+        <input type="text" id="inputTitle" placeholder="Job Title" required><br>
+        <input type="text" id="inputPhone" placeholder="Phone Number" required><br>
+        <input type="text" id="inputWebsite" placeholder="Website" required><br>
+        <input type="text" id="inputAddress" placeholder="Address" required><br>
+        <textarea id="inputAbout" placeholder="About Me" rows="4" required></textarea><br>
+        <input type="file" id="inputPhoto" accept="image/*" required><br>
+        <input type="text" id="inputEducation1" placeholder="Education 1" required><br>
+        <input type="text" id="inputEducation2" placeholder="Education 2" required><br>
+        <input type="text" id="inputExperience1" placeholder="Experience 1" required><br>
+        <input type="text" id="inputExperience2" placeholder="Experience 2" required><br>
+        <input type="text" id="inputSkill1" placeholder="Skill 1" required><br>
+        <input type="text" id="inputSkill2" placeholder="Skill 2" required><br>
+        <input type="text" id="inputSkill3" placeholder="Skill 3" required><br>
+        <input type="text" id="inputLanguage1" placeholder="Language 1" required><br>
+        <input type="text" id="inputLanguage2" placeholder="Language 2" required><br>
+        <input type="text" id="inputLanguage3" placeholder="Language 3" required><br>
+        <button type="button" onclick="updatePreview()">Preview CV</button>
+        <button type="button" onclick="generateCV()">Generate PDF</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
